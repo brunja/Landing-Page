@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .feature {
     background-color: $lightGrayishBlue;
     text-align: center;
@@ -60,4 +61,40 @@
         font-size: 0.875rem;
         line-height: 1.5;
     }
+=======
+.feature {
+
+    &__grid {
+
+        @include breakpoint-up(medium) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__item {
+        border: 1px solid magenta;
+        padding: 0.9375rem;
+
+        @include breakpoint-up(medium) {
+            flex: 0 0 50%;
+        }
+
+        @include breakpoint-up(large) {
+            flex: 1;
+        }
+    }
+
+    &__icon {
+
+    }
+
+    &__title {
+
+    }
+
+    &__desccription {
+
+    }
+>>>>>>> 6c1a4e25b87e62da09a3c83aaef29772fef9415f
 }
